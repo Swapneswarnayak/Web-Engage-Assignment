@@ -1,0 +1,11 @@
+#greet_box{
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 50%;
+    margin: 80px auto;
+    text-align: center;
+    padding: 10px;
+}
+.field{
+    color: rgb(247, 106, 50);
+}

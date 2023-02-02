@@ -20,7 +20,12 @@
           <img src="./assets/get a free.png" alt="" />
         </div>
         <div id="input_box">
-          <input type="email" name="" placeholder="Enter Your Email" id="email" />
+          <input
+            type="email"
+            name=""
+            placeholder="Enter Your Email"
+            id="email"
+          />
           <div id="country_code_box">
             <select name="" id="select_code_country">
               <option value="+91">+91</option>
@@ -46,14 +51,18 @@
               <option value="+30">+30</option> -->
             </select>
             <input
-              type="text"
+              type="tel"
               name=""
               placeholder="Enter Your Number"
               id="number"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              required
             />
           </div>
 
-          <a href=""><button id="talk_button">Talk to Us &#8594;</button></a>
+          <a href="./greeting.html"
+            ><button id="talk_button">Talk to Us &#8594;</button></a
+          >
         </div>
       </div>
     </div>
