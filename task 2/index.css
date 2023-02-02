@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(240, 182, 230);
+}
+
+h1{
+    text-align: center;
+    background-color: rgb(243, 68, 214);
+    padding: 10px;
+    color: white;
+}
+h1+h2{
+    text-align: end;
+    padding-right: 20px;
+    
+}
+button{
+    padding: 8px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 7px;
+    border-color: rgb(243, 68, 214);;
+    /* color: white; */
+    /* border: 0; */
+}
+button:hover{
+    cursor: pointer;
+}
+#main_div{
+    width: 80%;
+    margin: auto;
+}
+li + li {
+    margin-top: 10px;
+  }
