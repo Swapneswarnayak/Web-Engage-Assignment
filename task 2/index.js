@@ -1,7 +1,9 @@
 const fetchData = async () => {
   var tempData = `
+  <div class="small">
     <h3 >Q1. If Id is even print its respective name, username, email else print "I'm Odd"</h3>
     <br/>
+    
       <ul>
           {% for user in data %}
               {% if user.id is even %}
@@ -11,21 +13,29 @@ const fetchData = async () => {
               {% endif %}
           {% endfor %}
       </ul>
+      </div>
       <br/>
       <hr/>
+      <hr/>
       <br/>
+      <div class="small">
     <h3>Q2. From the shared sapmle data of array JSON, based on all id values get its respecive address keys and values and print them.</h3>
     <br/> 
+    
     <ul>
           {% for user in data %}
               <li>City: {{ user.address.city}}, Geolocation: Latitude: {{user.address.geo.lat}}, Longitude: {{user.address.geo.lng}}, Street: {{user.address.street}}, Suite: {{user.address.suite}}, Zipcode: {{user.address.zipcode}}</li>
           {% endfor %}
       </ul>
+      </div>
       <br/>
       <hr/>
+      <hr/>
       <br/>
+      <div class="small">
     <h3>Q3. If any email ends with .biz print its name with email values.</h3>
-    <br/>  
+    <br/> 
+     
     <ul>
         {% for user in data %}
             {% if user.email.endsWith(".biz") %}
@@ -33,11 +43,15 @@ const fetchData = async () => {
             {% endif %}
         {% endfor %}
       </ul>
+      </div>
       <br/>
       <hr/>
+      <hr/>
       <br/>
+      <div class="small">
     <h3>Q4. If city contains any of following "Aliyaview", "Howemouth", Gwenborough print its respective cityname, zipcode, Geo with lat and lang values.</h3>
     <br/>  
+    
     <ul>
           {% for user in data %}
               {% if user.address.city === "Aliyaview" or user.address.city === "Howemouth" or user.address.city === "Gwenborough" %}
@@ -45,11 +59,15 @@ const fetchData = async () => {
               {% endif %}
           {% endfor %}
       </ul>
+      </div>
       <br/>
       <hr/>
+      <hr/>
       <br/>
+      <div class="small">
     <h3>Q5. Print CatchPhrase which will contain max 15 letters.</h3>
-    <br/>  
+    <br/> 
+     
     <ul>
           {% for user in data %}
               {% if user.company.catchPhrase | length > 15 %}
@@ -57,6 +75,7 @@ const fetchData = async () => {
               {% endif %}
           {% endfor %}
       </ul>
+      </div>
       <br/>
       
       <br/>

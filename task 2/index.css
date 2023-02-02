@@ -7,7 +7,7 @@
 
 h1{
     text-align: center;
-    background-color: rgb(243, 68, 214);
+    background-color: rgb(189, 102, 174);
     padding: 10px;
     color: white;
 }
@@ -19,12 +19,12 @@ h1+h2{
 button{
     padding: 8px;
     margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 20px;
     font-weight: 700;
     border-radius: 7px;
     border-color: rgb(243, 68, 214);;
-    /* color: white; */
-    /* border: 0; */
+   
 }
 button:hover{
     cursor: pointer;
@@ -35,4 +35,10 @@ button:hover{
 }
 li + li {
     margin-top: 10px;
+  }
+  .small{
+    border: 2px solid black;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }

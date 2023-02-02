@@ -19,40 +19,46 @@
         <div id="input_GetaFree_logo">
           <img src="./assets/get a free.png" alt="" />
         </div>
-        <div id="input_box">
-          <input
-            type="email"
-            name=""
-            placeholder="Enter Your Email"
-            id="email"
-          />
-          <div id="country_code_box">
-            <select name="" id="select_code_country">
-              <option value="+91">+91</option>
-              <option value="+93">+93</option>
-              <option value="+358">+358</option>
-              <option value="+355">+355</option>
-              <option value="+213">+213</option>
-              <option value="+1684">+1684</option>
-              <option value="+376">+376</option>
-              <option value="+244">+244</option>
-              <option value="+1264">+1264</option>
-              <option value="+672">+672</option>
-             
-            </select>
-            <input
-              type="tel"
-              name=""
-              placeholder="Enter Your Number"
-              id="number"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-              required
-            />
-          </div>
 
-          <a href="./greeting.html"
-            ><button id="talk_button">Talk to Us &#8594;</button></a
-          >
+        <div id="input_box">
+          <form onsubmit="handleClick(event)">
+            <input
+              type="email"
+              name=""
+              placeholder="Enter Your Email"
+              id="email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"
+            />
+            <div id="country_code_box">
+              <select name="" id="select_code_country">
+                <option value="+91">+91</option>
+                <option value="+93">+93</option>
+                <option value="+358">+358</option>
+                <option value="+355">+355</option>
+                <option value="+213">+213</option>
+                <option value="+1684">+1684</option>
+                <option value="+376">+376</option>
+                <option value="+244">+244</option>
+                <option value="+1264">+1264</option>
+                <option value="+672">+672</option>
+              </select>
+              <input
+                type="tel"
+                name=""
+                placeholder="Enter Your Number"
+                id="number"
+                pattern="[0-9]{10}"
+                title="You have entered an invalid Mobile number"
+                required
+              />
+            </div>
+
+            <a href="./greeting.html"
+              ><button type="submit" id="talk_button">
+                Talk to Us &#8594;
+              </button></a
+            >
+          </form>
         </div>
       </div>
     </div>
