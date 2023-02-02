@@ -1,11 +1,16 @@
 #greet_box{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 8px;
     width: 50%;
     margin: 80px auto;
     text-align: center;
     padding: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .field{
     color: rgb(247, 106, 50);
+}
+body{
+    background-color: rgb(207, 184, 106);
 }
