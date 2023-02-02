@@ -88,3 +88,25 @@
 
 
 /* phonebook Css */
+
+#country_code_box{
+    border: 1px solid black;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#select_code_country{
+    padding-left: 3px;
+    border: 0;
+    height: 37px;
+    width: 12%;
+    outline: none;
+}
+#number{
+    border: 0;
+    height: 38px;
+    width: 86%;
+    padding-left: 10px;
+    outline: none;
+}
